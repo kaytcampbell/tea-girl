@@ -1,0 +1,21 @@
+.main-nav{
+  margin-top: 40px;
+  overflow: auto;
+  &__list{
+    @include vertical-center;
+    float: right;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+  &__list-item{
+    float: left;
+    margin: 20px 40px 0 40px;
+  }
+  &__link{
+    color: white;
+    padding: 10px 0;
+    &--cta{
+
+    }
+  }
+}
