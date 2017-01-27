@@ -1,0 +1,10 @@
+.section-padding{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.is-dropdown-submenu-item{
+  &:hover{
+    background: lighten($peach, 10%);
+  }
+}

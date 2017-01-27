@@ -136,6 +136,10 @@
 /* ==================== 4. Background Colours ==================== */
 .purple-bg{
   background-color: $purple;
+  a{
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 .peach-bg{
@@ -154,6 +158,9 @@
 /* ==================== 6. Typography ==================== */
 .white-text{
   color: white;
+  *{
+    color: white;
+  }
 }
 
 .uppercase{
