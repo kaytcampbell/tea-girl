@@ -2,4 +2,8 @@
   overflow: auto;
   height: 500px;
   background: lighten($purple, 20%);
+
+  &__content{
+    margin-top: 200px;
+  }
 }

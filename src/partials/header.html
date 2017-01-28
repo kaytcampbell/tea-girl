@@ -1,14 +1,76 @@
-<div class="header">
-  <div class="row column">
-    <img src="../assets/img/tea-girl-logo.png" class="header__logo">
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a class="main-nav__link" href="#">About</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__link" href="#">Our Tea</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__link" href="#">Tea-Ducation</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__link" href="#">Contact</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__link--cta button" href="#">Buy Tea</a></li>
-      </ul>
-    </nav>
+<!-- off-canvas title bar for 'small' screen -->
+<div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+  <div class="title-bar-left">
+    <a href="index.html">
+      <img src="../assets/img/tea-girl-logo.png" class="header__logo">
+    </a>
+  </div>
+  <div class="title-bar-right">
+    <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+  </div>
+</div>
+
+<!-- off-canvas right menu -->
+<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+  <ul class="vertical dropdown menu" data-dropdown-menu>
+    <li class="main-nav__list-item">
+      <a href="about.html">About Us</a>
+    </li>
+    <li class="main-nav__list-item">
+      <a href="story.html">the tea girl story</a>
+    </li>
+    <li class="main-nav__list-item"><a class="main-nav__link" href="our-tea.html">Our Tea</a></li>
+    <li class="main-nav__list-item">
+      <a href="tea-ducation.html">Tea Types</a>
+    </li>
+    <li class="main-nav__list-item">
+      <a href="tea-tips.html">Tea Tips</a>
+    </li>
+    <li class="main-nav__list-item"><a class="main-nav__link" href="contact.html">Contact</a></li>
+    <li class="main-nav__list-item"><a class="main-nav__link--cta button" href="#">Buy Tea</a></li>
+  </ul>
+</div>
+
+<!-- "wider" top-bar menu for 'medium' and up -->
+<div id="widemenu" class="top-bar">
+  <div class="header">
+    <div class="row column">
+      <div class="top-bar-left">
+        <a href="index.html">
+          <img src="../assets/img/tea-girl-logo.png" class="header__logo">
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <nav class="main-nav">
+          <ul class="main-nav__list dropdown menu" data-dropdown-menu>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">About</a>
+              <ul class="menu">
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="story.html">the tea girl story</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="our-tea.html">Our Tea</a></li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="tea-ducation.html">Tea-Ducation</a>
+              <ul class="menu">
+                <li>
+                  <a href="tea-ducation.html">Tea Types</a>
+                </li>
+                <li>
+                  <a href="tea-tips.html">Tea Tips</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="contact.html">Contact</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link--cta button" href="#">Buy Tea</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
