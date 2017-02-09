@@ -8,3 +8,10 @@
     background: lighten($peach, 10%);
   }
 }
+
+.tea{
+  @include breakpoint(medium down){
+    width: 150px;
+    max-width: none;
+  }
+}

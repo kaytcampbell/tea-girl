@@ -1,8 +1,6 @@
 .main-nav{
-  margin-top: 40px;
-  overflow: auto;
+  margin-top: 25px;
   &__list{
-    @include vertical-center;
     float: right;
     list-style-type: none;
     margin-bottom: 0;
@@ -10,6 +8,12 @@
   &__list-item{
     float: left;
     margin: 0 40px 0 40px;
+    @media screen and (min-width: 1000px) and (max-width: 1200px){
+      margin: 0 20px 0 20px;
+    }
+    &:last-child{
+      margin: 0 0 0 40px;
+    }
   }
   &__link{
     color: white;
@@ -17,5 +21,27 @@
     &--cta{
 
     }
+  }
+}
+
+.off-canvas{
+  .main-nav{
+    &__list-item{
+      border-top: 2px solid rgba(250,250,250,0.1);
+      padding: 10px 0;
+      width: 100%;
+      margin: 0;
+      &:last-child{
+        border-bottom: 2px solid rgba(250,250,250,0.1);
+      }
+    }
+    &__link{
+      color: white;
+    }
+  }
+  .header__logo{
+    width: 150px;
+    margin-left: 20px;
+    padding: 10px 0;
   }
 }
