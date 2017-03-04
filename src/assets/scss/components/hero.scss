@@ -11,4 +11,11 @@
       font-weight: 700;
     }
   }
+
+  &--home{
+    background-image: url('../img/matcha.jpg');
+    width: 100%;
+    background-size: cover;
+    margin-top: -125px;
+  }
 }
