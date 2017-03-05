@@ -29,3 +29,27 @@
 .content-list{
   margin-left: 40px;
 }
+
+.tea-cups{
+  @media only screen and (max-width: 1324px){
+    height: 360px;
+  }
+  background-image: url('../img/tea-cups.jpg');
+  background-size: cover;
+  background-position: top center;
+  height: 335px;
+  float: left;
+}
+.purple-row{
+  background-color: $purple;
+  float: left;
+  @include breakpoint(large){
+    height: 335px;
+  }
+  @media only screen and (max-width: 1324px){
+    height: 360px !important;
+  }
+  @include breakpoint(small only){
+    height: auto !important;
+  }
+}

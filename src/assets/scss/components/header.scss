@@ -1,17 +1,23 @@
 .header{
   width: 100%;
-  background: rgba(237, 191, 172, 0.4);
+  background: rgba(147, 59, 106, 0.6);
   padding: 20px 0;
   position: relative;
+  @include breakpoint(medium down){
+    background: $purple;
+  }
 
   &__logo{
     width: 270px;
     float: left;
     @include breakpoint(medium only){
-      width: 220px;
+      width: 180px;
     }
     @include breakpoint(small only){
       width: 180px;
+    }
+    @include breakpoint(large only){
+      width: 150px;
     }
   }
 }

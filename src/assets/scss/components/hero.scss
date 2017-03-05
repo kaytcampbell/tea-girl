@@ -1,21 +1,53 @@
 .hero{
-  overflow: auto;
-  height: 500px;
-  background: lighten($purple, 20%);
-
+  width: 100%;
+  background-size: cover;
+  margin-top: -125px;
+  min-height: 650px;
+  background-position: top center;
+  @include breakpoint(medium only){
+    min-height: 300px;
+    margin: 0;
+  }
+  @include breakpoint(small only){
+    min-height: 300px;
+    margin: 0;
+  }
   &__content{
     margin-top: 200px;
-
+    @include breakpoint(medium down){
+      margin-top: 40px;
+    }
     h1{
       font-family: 'Quicksand';
       font-weight: 700;
     }
   }
-
   &--home{
+    @extend .hero;
     background-image: url('../img/matcha.jpg');
-    width: 100%;
-    background-size: cover;
-    margin-top: -125px;
+  }
+  &--about{
+    @extend .hero;
+    background-image: url('../img/tea-cups-close.jpg');
+  }
+  &--our-tea{
+    @extend .hero;
+    background-image: url('../img/tea-leaves.jpg');
+  }
+  &--story{
+    @extend .hero;
+    background-image: url('../img/chairs.jpg');
+  }
+  &--types{
+    @extend .hero;
+    background-image: url('../img/bamboo-tea.jpg');
+  }
+  &--tips{
+    @extend .hero;
+    background-image: url('../img/mug.jpg');
+  }
+  &--contact{
+    @extend .hero;
+    background-image: url('../img/shop.jpg');
   }
 }
