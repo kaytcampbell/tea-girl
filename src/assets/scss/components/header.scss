@@ -3,6 +3,7 @@
   background: rgba(147, 59, 106, 0.6);
   padding: 20px 0;
   position: relative;
+  z-index: 9999;
   @include breakpoint(medium down){
     background: $purple;
   }
